@@ -24,7 +24,7 @@ today = date.today()
 # COMMAND ----------
 
 # Secret use in db conection
-secretarn = 'arn:aws:secretsmanager:us-east-1:590284024382:secret:prod/snowplow/coxa-1W1z7E'
+secretarn = 'arn:aws:secretsmanager:us-east-1:123456:secret:dev/getdevelop/coxa'
 
 secmgr = boto3.client('secretsmanager', region_name='us-east-1')
 secret = secmgr.get_secret_value(SecretId=secretarn)
