@@ -23,6 +23,7 @@ today = date.today()
 
 # COMMAND ----------
 
+
 # Secret use in db conection
 secretarn = 'arn:aws:secretsmanager:us-east-1:123456:secret:dev/getdevelop/coxa'
 
