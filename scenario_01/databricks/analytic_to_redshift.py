@@ -38,7 +38,7 @@ database = f'getdevelopment'
 dbClusterIdentifier = secretString["dbClusterIdentifier"]
 
 connection_string = f'jdbc:postgresql://{host}:{port}/{database}?user={user}&password={password}'
-redshit_role = "arn:aws:iam::590284024382:role/dwproducaoSpectrumRole"
+redshit_role = "arn:aws:iam::123456:role/dwproducaoSpectrumRole"
 
 # COMMAND ----------
 
