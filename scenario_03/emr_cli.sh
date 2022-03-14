@@ -1,0 +1,11 @@
+aws emr create-cluster --name "Spark cluster Order Coxa Test" \
+    --release-label emr-5.24.1 \
+    --applications Name=Spark \
+    --log-uri s3://emr-temp/logs/ \
+    --ec2-attributes KeyName=<your-key-pair> \
+    --instance-type m5.xlarge \
+    --instance-count 4 \
+    --bootstrap-actions Path=s3://emr-temp/emr_bootstrap.sh \
+    --steps Type=Spark,Name="Spark job Order",ActionOnFailure=CONTINUE,Args=[--deploy-mode,cluster,--master,yarn,s3://emr-temp/order_coxa_test.py] \
+    --use-default-roles \
+    --auto-terminate

@@ -9,8 +9,8 @@ module "lambda_function" {
   source_path = "src/lambda-function1.py"
 
   policies = [
-    "arn:aws:iam::590284024382:policy/datalake-pipeline-development-databricks-job-policy",
-    "arn:aws:iam::590284024382:policy/datalake-pipeline-development-databricks-job-kms-policy"
+    "arn:aws:iam::123456:policy/datalake-pipeline-development-databricks-job-policy",
+    "arn:aws:iam::123456:policy/datalake-pipeline-development-databricks-job-kms-policy"
     ]
 
   tags = var.tags
