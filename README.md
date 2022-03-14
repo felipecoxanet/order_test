@@ -16,7 +16,7 @@ Was created a S3 Trigger what calls a Lambda every time an new object is copied 
 The example process:\
 `S3 file > S3 tigger > Lambda > Glue > S3 datalake > Redshift`
 
-**Scenario 03**
+**Scenario 03**\
 Here the approach is use EMR using a CLI, but here can use an airflow operator too, or other workflow.\
 The example process:\
 `S3 file > any workflow > EMR > S3 datalake > Redshift`
