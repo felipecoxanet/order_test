@@ -1,0 +1,146 @@
+{
+  "merchantId": {
+    "S": "e38547ea-fc35-4fc8-a2b6-8f5eeb73aeb6"
+  },
+  "customerId": {
+    "S": "89602357-8b06-4649-8b1c-6696b3e9a217"
+  },
+  "status": {
+    "S": "PENDING"
+  },
+  "shopper": {
+    "M": {
+      "firstName": {
+        "S": "Bob"
+      },
+      "lastName": {
+        "S": "Smith"
+      },
+      "phone": {
+        "S": "0987654321"
+      },
+      "billingAddress": {
+        "M": {
+          "id": {
+            "S": "0acba700-2e8b-4bbc-88f6-66e14badde88"
+          },
+          "number": {
+            "S": "1A"
+          },
+          "zipCode": {
+            "S": "11.123-CP"
+          },
+          "phoneNumber": {
+            "S": "0987654321"
+          },
+          "city": {
+            "S": "Sao Paulo"
+          },
+          "street": {
+            "S": "Main street"
+          },
+          "state": {
+            "S": "SP"
+          },
+          "timestamp": {
+            "S": "2022-03-11T00:13:32.320Z"
+          }
+        }
+      },
+      "id": {
+        "S": "4589eed1-8b53-4730-9f2c-f02c7cb0dbf5"
+      },
+      "birthDate": {
+        "S": "01/01/1950"
+      },
+      "email": {
+        "S": "test@email.com"
+      },
+      "timestamp": {
+        "S": "2022-03-11T00:13:32.320Z"
+      }
+    }
+  },
+  "order": {
+    "M": {
+      "id": {
+        "S": "7a925cee-e49c-4d6c-b326-fdecba0aa4e6"
+      },
+      "reference": {
+        "S": "OX00998877665544332211"
+      },
+      "orderAmount": {
+        "N": "30000"
+      },
+      "description": {
+        "S": "a brief description of the order"
+      },
+      "taxAmount": {
+        "N": "3000"
+      },
+      "items": {
+        "L": [
+          {
+            "M": {
+              "id": {
+                "S": "98ad7b77-41cf-4ac0-9235-197703fa0a96"
+              },
+              "reference": {
+                "S": "123456"
+              },
+              "image": {
+                "S": "http://www.test.com.br"
+              },
+              "quantity": {
+                "N": "10"
+              },
+              "price": {
+                "N": "18000"
+              },
+              "name": {
+                "S": "Product X"
+              },
+              "sku": {
+                "S": "123456"
+              },
+              "url": {
+                "S": "http://www.test.com.br"
+              }
+            }
+          },
+          {
+            "M": {
+              "id": {
+                "S": "98ad7b77-41cf-4ac0-9235-197703fa0a96"
+              },
+              "reference": {
+                "S": "654321"
+              },
+              "image": {
+                "S": "http://www.test.com.br"
+              },
+              "quantity": {
+                "N": "5"
+              },
+              "price": {
+                "N": "9000"
+              },
+              "name": {
+                "S": "Product Y"
+              },
+              "sku": {
+                "S": "654321"
+              },
+              "url": {
+                "S": "http://www.test.com.br"
+              }
+            }
+          }
+        ]
+      },
+      "timestamp": {
+        "S": "2022-03-11T00:13:32.320Z"
+      }
+    }
+  }
+}
